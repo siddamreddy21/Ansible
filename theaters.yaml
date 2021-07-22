@@ -1,0 +1,23 @@
+---
+# this is a class room example.
+
+theaters:
+  - name: sandhya
+    showtimes:
+      - 11:00
+      - 14:30      
+    movies:
+      - A
+      - B
+      - C
+    price: 100
+  - name: PVR
+    showtimes:
+      - 11:00
+      - 14:30
+
+    movies:
+      - A
+      - B
+    price: 200
+  
