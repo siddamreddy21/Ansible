@@ -7,3 +7,8 @@
     command: 
   - name: findout current directory
     command: pwd
+  - name: uninstall tree
+    yum: 
+      name: tree
+      state: present
+      
