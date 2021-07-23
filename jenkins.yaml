@@ -1,0 +1,26 @@
+---
+- hosts: 10.6.111.26
+  tasks: 
+  - name: install openjdk 8
+    yum: 
+      name: java-1.8.0-openjdk.x86_64
+      state: present
+
+  - name: install tomcat 7
+    yum:
+      name: tomcat
+      state: present
+
+  - name: download jenkins to webapps/
+    get_url:
+      url: https://get.jenkins.io/war-stable/2.289.2/jenkins.war
+      dest: /usr/share/tomcat/webapps/jenkins.war  
+         
+  - name: enable and start tomcat
+    service:
+      name: tomcat
+      state: started
+      enabled: yes
+      
+
+    
