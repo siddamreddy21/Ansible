@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks: 
+  - name: find who is executing
+    command: whoami
+  - name: ping all
+    command: 
+  - name: findout current directory
+    command: pwd
