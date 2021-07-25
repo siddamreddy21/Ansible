@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  tasks:
+  - name: print contents of file
+    command: cat /home/ansadmin/test
+    register: cat_contents
+    ignore_failures: yes
+  - name: display contents
+    debug:
+      msg: "{{cat_contents}}"
+  - name: display content
+    debug:
+      msg: "{{cat_contents.stdout}}"
+  - name: display error
+    debug:
+      msg: "{{cat_contents.stderr}}"
