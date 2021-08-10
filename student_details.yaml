@@ -1,0 +1,12 @@
+---
+students:
+  - detail:
+    name: RAM
+    phone: 123
+  - detail:
+    name: Test
+    phone: 456
+  - detail:
+    name: test
+    phone: 789
+    
